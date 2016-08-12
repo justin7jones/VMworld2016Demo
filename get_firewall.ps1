@@ -1,0 +1,1 @@
+Invoke-WebRequest https://nsx.j2sys.local/api/2.0/services/policy/securitypolicy/hierarchy
