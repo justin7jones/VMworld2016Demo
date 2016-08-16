@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <securityPolicies>
     <securityPolicy>
+        <objectId>policy-8</objectId>
+        <objectTypeName>Policy</objectTypeName>
+        <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+        <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+        <revision>5</revision>
+        <type>
+            <typeName>Policy</typeName>
+        </type>
+        <name>Allow SSH Inbound</name>
+        <description>This security policy allows SSH connections on port 22 inbound.</description>
+        <scope>
+            <id>globalroot-0</id>
+            <objectTypeName>GlobalRoot</objectTypeName>
+            <name>Global</name>
+        </scope>
+        <clientHandle></clientHandle><extendedAttributes/>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+        <precedence>5300</precedence>
+        <actionsByCategory>
+            <category>firewall</category>
+            <action class="firewallSecurityAction">
+                <objectId>firewallpolicyaction-4</objectId>
+                <objectTypeName>FirewallPolicyAction</objectTypeName>
+                <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+                <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                <revision>5</revision>
+                <type>
+                    <typeName>FirewallPolicyAction</typeName>
+                </type>
+                <name>Allow SSH Inbound</name>
+                <description>allow SSH inbound</description>
+                <scope>
+                    <id>globalroot-0</id>
+                    <objectTypeName>GlobalRoot</objectTypeName>
+                    <name>Global</name>
+                </scope>
+                <clientHandle></clientHandle><extendedAttributes/>
+                <isUniversal>false</isUniversal>
+                <universalRevision>0</universalRevision>
+                <category>firewall</category>
+                <executionOrder>1</executionOrder>
+                <isEnabled>true</isEnabled>
+                <isActionEnforced>false</isActionEnforced>
+                <invalidSecondaryContainers>false</invalidSecondaryContainers>
+                <applications>
+                    <application>
+                        <objectId>application-305</objectId>
+                        <objectTypeName>Application</objectTypeName>
+                        <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+                        <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                        <revision>5</revision>
+                        <type>
+                            <typeName>Application</typeName>
+                        </type>
+                        <name>SSH</name>
+                        <scope>
+                            <id>globalroot-0</id>
+                            <objectTypeName>GlobalRoot</objectTypeName>
+                            <name>Global</name>
+                        </scope>
+                        <clientHandle></clientHandle><extendedAttributes/>
+                        <isUniversal>false</isUniversal>
+                        <universalRevision>0</universalRevision>
+                        <inheritanceAllowed>true</inheritanceAllowed>
+                        <element>
+                            <applicationProtocol>TCP</applicationProtocol>
+                            <value>22</value>
+                        </element>
+                    </application>
+                </applications>
+                <invalidApplications>false</invalidApplications>
+                <logged>true</logged>
+                <action>allow</action>
+                <direction>inbound</direction>
+                <outsideSecondaryContainer>false</outsideSecondaryContainer>
+            </action>
+        </actionsByCategory>
+        <statusesByCategory>
+            <category>firewall</category>
+            <status>in_sync</status>
+        </statusesByCategory>
+    </securityPolicy>
+    <securityPolicy>
         <objectId>policy-5</objectId>
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
