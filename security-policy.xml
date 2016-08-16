@@ -5,7 +5,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>6</revision>
+        <revision>7</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -22,16 +22,16 @@
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>6300</precedence>
         <securityGroupBinding>
-            <objectId>securitygroup-20</objectId>
+            <objectId>securitygroup-10</objectId>
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>3</revision>
+            <revision>23</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>JumpBox Servers</name>
-            <description>Highly Secured Servers that are used for administrative operations.</description>
+            <name>Wordstress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
