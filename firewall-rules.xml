@@ -12,15 +12,6 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>4300</precedence>
-        <securityGroupBinding>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>0</revision>
-            <name>Wordstress-DB-On-Demand-af79cb64-c4bf-4c7a-abc5-fd3e631c86b1</name>
-            <description>Managed by VMware vRealize Automation</description>
-            <clientHandle></clientHandle>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -73,15 +64,6 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>1000</precedence>
-        <securityGroupBinding>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>0</revision>
-            <name>Wordstress-Web-On-Demand-21751c5f-9de7-4847-b9b2-b44e760c9836</name>
-            <description>this security group is for web servers in the wordmess stack</description>
-            <clientHandle></clientHandle>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -147,24 +129,6 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>1</precedence>
-        <securityGroupBinding>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>0</revision>
-            <name>Wordstress-DB-On-Demand-af79cb64-c4bf-4c7a-abc5-fd3e631c86b1</name>
-            <description>Managed by VMware vRealize Automation</description>
-            <clientHandle></clientHandle>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
-        <securityGroupBinding>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>0</revision>
-            <name>Wordstress-Web-On-Demand-21751c5f-9de7-4847-b9b2-b44e760c9836</name>
-            <description>this security group is for web servers in the wordmess stack</description>
-            <clientHandle></clientHandle>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -193,22 +157,4 @@
             <status>in_sync</status>
         </statusesByCategory>
     </securityPolicy>
-    <securityGroup>
-        <revision>0</revision>
-        <name>Wordstress-Web-On-Demand-21751c5f-9de7-4847-b9b2-b44e760c9836</name>
-        <description>this security group is for web servers in the wordmess stack</description>
-        <clientHandle></clientHandle>
-        <isUniversal>false</isUniversal>
-        <universalRevision>0</universalRevision>
-        <inheritanceAllowed>false</inheritanceAllowed>
-    </securityGroup>
-    <securityGroup>
-        <revision>0</revision>
-        <name>Wordstress-DB-On-Demand-af79cb64-c4bf-4c7a-abc5-fd3e631c86b1</name>
-        <description>Managed by VMware vRealize Automation</description>
-        <clientHandle></clientHandle>
-        <isUniversal>false</isUniversal>
-        <universalRevision>0</universalRevision>
-        <inheritanceAllowed>false</inheritanceAllowed>
-    </securityGroup>
 </securityPolicyHierarchy>
