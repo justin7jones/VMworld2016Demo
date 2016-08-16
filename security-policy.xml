@@ -1,6 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <securityPolicies>
     <securityPolicy>
+        <objectId>policy-9</objectId>
+        <objectTypeName>Policy</objectTypeName>
+        <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+        <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+        <revision>5</revision>
+        <type>
+            <typeName>Policy</typeName>
+        </type>
+        <name>Allow SSH Inbound (Jump Box Only)</name>
+        <description>This security policy allows SSH from Jump Box servers as source</description>
+        <scope>
+            <id>globalroot-0</id>
+            <objectTypeName>GlobalRoot</objectTypeName>
+            <name>Global</name>
+        </scope>
+        <clientHandle></clientHandle><extendedAttributes/>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+        <precedence>6300</precedence>
+        <actionsByCategory>
+            <category>firewall</category>
+            <action class="firewallSecurityAction">
+                <objectId>firewallpolicyaction-5</objectId>
+                <objectTypeName>FirewallPolicyAction</objectTypeName>
+                <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+                <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                <revision>5</revision>
+                <type>
+                    <typeName>FirewallPolicyAction</typeName>
+                </type>
+                <name>Allow SSH from Jump Box</name>
+                <description>allows SSH inbound from jump box systems</description>
+                <scope>
+                    <id>globalroot-0</id>
+                    <objectTypeName>GlobalRoot</objectTypeName>
+                    <name>Global</name>
+                </scope>
+                <clientHandle></clientHandle><extendedAttributes/>
+                <isUniversal>false</isUniversal>
+                <universalRevision>0</universalRevision>
+                <category>firewall</category>
+                <executionOrder>1</executionOrder>
+                <isEnabled>true</isEnabled>
+                <isActionEnforced>false</isActionEnforced>
+                <secondarySecurityGroup>
+                    <objectId>securitygroup-20</objectId>
+                    <objectTypeName>SecurityGroup</objectTypeName>
+                    <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+                    <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                    <revision>3</revision>
+                    <type>
+                        <typeName>SecurityGroup</typeName>
+                    </type>
+                    <name>JumpBox Servers</name>
+                    <description>Highly Secured Servers that are used for administrative operations.</description>
+                    <scope>
+                        <id>globalroot-0</id>
+                        <objectTypeName>GlobalRoot</objectTypeName>
+                        <name>Global</name>
+                    </scope>
+                    <clientHandle></clientHandle><extendedAttributes/>
+                    <isUniversal>false</isUniversal>
+                    <universalRevision>0</universalRevision>
+                </secondarySecurityGroup>
+                <invalidSecondaryContainers>false</invalidSecondaryContainers>
+                <invalidApplications>false</invalidApplications>
+                <logged>true</logged>
+                <action>allow</action>
+                <direction>inbound</direction>
+                <outsideSecondaryContainer>false</outsideSecondaryContainer>
+            </action>
+        </actionsByCategory>
+        <statusesByCategory>
+            <category>firewall</category>
+            <status>in_sync</status>
+        </statusesByCategory>
+    </securityPolicy>
+    <securityPolicy>
         <objectId>policy-8</objectId>
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
