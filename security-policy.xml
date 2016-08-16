@@ -84,7 +84,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>5</revision>
+        <revision>6</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -100,6 +100,26 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>5300</precedence>
+        <securityGroupBinding>
+            <objectId>securitygroup-10</objectId>
+            <objectTypeName>SecurityGroup</objectTypeName>
+            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>12</revision>
+            <type>
+                <typeName>SecurityGroup</typeName>
+            </type>
+            <name>Wordstress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <scope>
+                <id>globalroot-0</id>
+                <objectTypeName>GlobalRoot</objectTypeName>
+                <name>Global</name>
+            </scope>
+            <clientHandle></clientHandle><extendedAttributes/>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -169,7 +189,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>5</revision>
+        <revision>6</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -185,6 +205,26 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>4300</precedence>
+        <securityGroupBinding>
+            <objectId>securitygroup-10</objectId>
+            <objectTypeName>SecurityGroup</objectTypeName>
+            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>12</revision>
+            <type>
+                <typeName>SecurityGroup</typeName>
+            </type>
+            <name>Wordstress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <scope>
+                <id>globalroot-0</id>
+                <objectTypeName>GlobalRoot</objectTypeName>
+                <name>Global</name>
+            </scope>
+            <clientHandle></clientHandle><extendedAttributes/>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -691,7 +731,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>8</revision>
+        <revision>9</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -707,6 +747,26 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>1</precedence>
+        <securityGroupBinding>
+            <objectId>securitygroup-10</objectId>
+            <objectTypeName>SecurityGroup</objectTypeName>
+            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>12</revision>
+            <type>
+                <typeName>SecurityGroup</typeName>
+            </type>
+            <name>Wordstress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <scope>
+                <id>globalroot-0</id>
+                <objectTypeName>GlobalRoot</objectTypeName>
+                <name>Global</name>
+            </scope>
+            <clientHandle></clientHandle><extendedAttributes/>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
