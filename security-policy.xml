@@ -5,7 +5,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>7</revision>
+        <revision>8</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -21,26 +21,6 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>6300</precedence>
-        <securityGroupBinding>
-            <objectId>securitygroup-10</objectId>
-            <objectTypeName>SecurityGroup</objectTypeName>
-            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>23</revision>
-            <type>
-                <typeName>SecurityGroup</typeName>
-            </type>
-            <name>Wordstress-DEV-DB</name>
-            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
-            <scope>
-                <id>globalroot-0</id>
-                <objectTypeName>GlobalRoot</objectTypeName>
-                <name>Global</name>
-            </scope>
-            <clientHandle></clientHandle><extendedAttributes/>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -104,7 +84,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>10</revision>
+        <revision>12</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -121,16 +101,36 @@
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>5300</precedence>
         <securityGroupBinding>
+            <objectId>securitygroup-10</objectId>
+            <objectTypeName>SecurityGroup</objectTypeName>
+            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>35</revision>
+            <type>
+                <typeName>SecurityGroup</typeName>
+            </type>
+            <name>WordPress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <scope>
+                <id>globalroot-0</id>
+                <objectTypeName>GlobalRoot</objectTypeName>
+                <name>Global</name>
+            </scope>
+            <clientHandle></clientHandle><extendedAttributes/>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <securityGroupBinding>
             <objectId>securitygroup-11</objectId>
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>19</revision>
+            <revision>32</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-DEV-WEB</name>
-            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-DEV-WEB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -145,32 +145,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>18</revision>
+            <revision>30</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-PROD-DB</name>
-            <description>(PROD ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
-            <scope>
-                <id>globalroot-0</id>
-                <objectTypeName>GlobalRoot</objectTypeName>
-                <name>Global</name>
-            </scope>
-            <clientHandle></clientHandle><extendedAttributes/>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
-        <securityGroupBinding>
-            <objectId>securitygroup-15</objectId>
-            <objectTypeName>SecurityGroup</objectTypeName>
-            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>20</revision>
-            <type>
-                <typeName>SecurityGroup</typeName>
-            </type>
-            <name>Wordstress-PROD-WEB</name>
-            <description>(PROD ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-PROD-DB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -249,7 +229,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>8</revision>
+        <revision>9</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -266,36 +246,16 @@
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>4300</precedence>
         <securityGroupBinding>
-            <objectId>securitygroup-10</objectId>
-            <objectTypeName>SecurityGroup</objectTypeName>
-            <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
-            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>23</revision>
-            <type>
-                <typeName>SecurityGroup</typeName>
-            </type>
-            <name>Wordstress-DEV-DB</name>
-            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
-            <scope>
-                <id>globalroot-0</id>
-                <objectTypeName>GlobalRoot</objectTypeName>
-                <name>Global</name>
-            </scope>
-            <clientHandle></clientHandle><extendedAttributes/>
-            <isUniversal>false</isUniversal>
-            <universalRevision>0</universalRevision>
-        </securityGroupBinding>
-        <securityGroupBinding>
             <objectId>securitygroup-14</objectId>
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>18</revision>
+            <revision>30</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-PROD-DB</name>
-            <description>(PROD ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-PROD-DB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -702,7 +662,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>7</revision>
+        <revision>8</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -723,12 +683,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>19</revision>
+            <revision>32</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-DEV-WEB</name>
-            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-DEV-WEB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -743,12 +703,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>20</revision>
+            <revision>32</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-PROD-WEB</name>
-            <description>(PROD ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-PROD-WEB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -851,7 +811,7 @@
         <objectTypeName>Policy</objectTypeName>
         <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-        <revision>13</revision>
+        <revision>16</revision>
         <type>
             <typeName>Policy</typeName>
         </type>
@@ -872,12 +832,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>23</revision>
+            <revision>35</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-DEV-DB</name>
-            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -892,12 +852,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>19</revision>
+            <revision>32</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-DEV-WEB</name>
-            <description>(DEVELOPMENT ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-DEV-WEB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -912,12 +872,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>18</revision>
+            <revision>30</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-PROD-DB</name>
-            <description>(PROD ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-PROD-DB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
@@ -932,12 +892,12 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
-            <revision>20</revision>
+            <revision>32</revision>
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
-            <name>Wordstress-PROD-WEB</name>
-            <description>(PROD ENVIRONMENT) Security Group for Wordstress stack MySQL database servers</description>
+            <name>WordPress-PROD-WEB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
             <scope>
                 <id>globalroot-0</id>
                 <objectTypeName>GlobalRoot</objectTypeName>
