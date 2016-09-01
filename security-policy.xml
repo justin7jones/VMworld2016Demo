@@ -125,7 +125,11 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+<<<<<<< HEAD
             <revision>33</revision>
+=======
+            <revision>32</revision>
+>>>>>>> origin/master
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
@@ -812,7 +816,11 @@
             <objectTypeName>SecurityGroup</objectTypeName>
             <vsmUuid>42139CD5-23AA-FDD3-FFCB-9DEA8450E5D8</vsmUuid>
             <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+<<<<<<< HEAD
             <revision>33</revision>
+=======
+            <revision>32</revision>
+>>>>>>> origin/master
             <type>
                 <typeName>SecurityGroup</typeName>
             </type>
