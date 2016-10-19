@@ -5,6 +5,131 @@
     <securityPolicy>
         <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
         <revision>0</revision>
+        <name>Allow SSH Inbound (Jump Box Only)</name>
+        <description>This security policy allows SSH from Jump Box servers as source</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+        <precedence>6300</precedence>
+        <actionsByCategory>
+            <category>firewall</category>
+            <action class="firewallSecurityAction">
+                <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                <revision>0</revision>
+                <name>Allow SSH from Jump Box</name>
+                <description>allows SSH inbound from jump box systems</description>
+                <clientHandle></clientHandle>
+                <isUniversal>false</isUniversal>
+                <universalRevision>0</universalRevision>
+                <category>firewall</category>
+                <executionOrder>1</executionOrder>
+                <isEnabled>true</isEnabled>
+                <isActionEnforced>false</isActionEnforced>
+                <secondarySecurityGroup>
+                    <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                    <revision>0</revision>
+                    <name>JumpBox Servers</name>
+                    <description>Highly Secured Servers that are used for administrative operations.</description>
+                    <clientHandle></clientHandle>
+                    <isUniversal>false</isUniversal>
+                    <universalRevision>0</universalRevision>
+                </secondarySecurityGroup>
+                <invalidSecondaryContainers>false</invalidSecondaryContainers>
+                <invalidApplications>false</invalidApplications>
+                <logged>true</logged>
+                <action>allow</action>
+                <direction>inbound</direction>
+                <outsideSecondaryContainer>false</outsideSecondaryContainer>
+            </action>
+        </actionsByCategory>
+        <statusesByCategory>
+            <category>firewall</category>
+            <status>in_sync</status>
+        </statusesByCategory>
+    </securityPolicy>
+    <securityPolicy>
+        <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+        <revision>0</revision>
+        <name>Allow SSH Inbound</name>
+        <description>This security policy allows SSH connections on port 22 inbound.</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+        <precedence>5300</precedence>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-DEV-WEB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-PROD-DB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <actionsByCategory>
+            <category>firewall</category>
+            <action class="firewallSecurityAction">
+                <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                <revision>0</revision>
+                <name>Allow SSH Inbound</name>
+                <description>allow SSH inbound</description>
+                <clientHandle></clientHandle>
+                <isUniversal>false</isUniversal>
+                <universalRevision>0</universalRevision>
+                <category>firewall</category>
+                <executionOrder>1</executionOrder>
+                <isEnabled>true</isEnabled>
+                <isActionEnforced>false</isActionEnforced>
+                <invalidSecondaryContainers>false</invalidSecondaryContainers>
+                <applications>
+                    <application>
+                        <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+                        <revision>0</revision>
+                        <name>SSH</name>
+                        <clientHandle></clientHandle>
+                        <isUniversal>false</isUniversal>
+                        <universalRevision>0</universalRevision>
+                        <inheritanceAllowed>true</inheritanceAllowed>
+                        <element>
+                            <applicationProtocol>TCP</applicationProtocol>
+                            <value>22</value>
+                        </element>
+                    </application>
+                </applications>
+                <invalidApplications>false</invalidApplications>
+                <logged>true</logged>
+                <action>allow</action>
+                <direction>inbound</direction>
+                <outsideSecondaryContainer>false</outsideSecondaryContainer>
+            </action>
+        </actionsByCategory>
+        <statusesByCategory>
+            <category>firewall</category>
+            <status>in_sync</status>
+        </statusesByCategory>
+    </securityPolicy>
+    <securityPolicy>
+        <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+        <revision>0</revision>
         <name>mySQL Database Security Policy</name>
         <description>Security Policy for mySQL database servers</description>
         <clientHandle></clientHandle>
@@ -64,6 +189,15 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>1000</precedence>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-DEV-WEB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -129,6 +263,42 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>1</precedence>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-DEV-WEB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-PROD-DB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-PROD-WEB</name>
+            <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
@@ -157,4 +327,49 @@
             <status>in_sync</status>
         </statusesByCategory>
     </securityPolicy>
+    <securityGroup>
+        <revision>0</revision>
+        <name>WordPress-DEV-WEB</name>
+        <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+    </securityGroup>
+    <securityGroup>
+        <revision>0</revision>
+        <name>WordPress-PROD-DB</name>
+        <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+    </securityGroup>
+    <securityGroup>
+        <revision>0</revision>
+        <name>WordPress-DEV-DB</name>
+        <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+    </securityGroup>
+    <securityGroup>
+        <revision>0</revision>
+        <name>JumpBox Servers</name>
+        <description>Highly Secured Servers that are used for administrative operations.</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+    </securityGroup>
+    <securityGroup>
+        <revision>0</revision>
+        <name>WordPress-PROD-WEB</name>
+        <description>(PROD ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <inheritanceAllowed>false</inheritanceAllowed>
+    </securityGroup>
 </securityPolicyHierarchy>
