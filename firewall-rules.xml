@@ -12,6 +12,15 @@
         <universalRevision>0</universalRevision>
         <inheritanceAllowed>false</inheritanceAllowed>
         <precedence>6300</precedence>
+        <securityGroupBinding>
+            <nodeId>b5534965-ff17-457f-af41-bc3407e6edba</nodeId>
+            <revision>0</revision>
+            <name>WordPress-DEV-DB</name>
+            <description>(DEVELOPMENT ENVIRONMENT) Security Group for WordPress stack MySQL database servers</description>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+        </securityGroupBinding>
         <actionsByCategory>
             <category>firewall</category>
             <action class="firewallSecurityAction">
