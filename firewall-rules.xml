@@ -1,2 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<securityPolicyHierarchy><name></name><description></description><securityPolicy><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>Block Web Browsing</name><description>Blocks ports 80 and 443</description><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>false</inheritanceAllowed><precedence>5300</precedence><actionsByCategory><category>firewall</category><action class="firewallSecurityAction"><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>Block Web Browsing</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><category>firewall</category><executionOrder>1</executionOrder><isEnabled>true</isEnabled><isActionEnforced>false</isActionEnforced><invalidSecondaryContainers>false</invalidSecondaryContainers><applications><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>HTTPS</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>TCP</applicationProtocol><value>443</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>HTTP</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>TCP</applicationProtocol><value>80</value></element></application></applications><invalidApplications>false</invalidApplications><logged>false</logged><action>block</action><direction>outbound</direction><outsideSecondaryContainer>false</outsideSecondaryContainer></action></actionsByCategory><statusesByCategory><category>firewall</category><status>in_sync</status></statusesByCategory></securityPolicy><securityPolicy><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>Block the Evil Ping</name><description>blocks ping</description><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>false</inheritanceAllowed><precedence>4300</precedence><actionsByCategory><category>firewall</category><action class="firewallSecurityAction"><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>Blocks Incoming Ping</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><category>firewall</category><executionOrder>1</executionOrder><isEnabled>true</isEnabled><isActionEnforced>false</isActionEnforced><invalidSecondaryContainers>false</invalidSecondaryContainers><applications><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Destination Unreachable</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>destination-unreachable</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Echo</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>echo-request</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Echo Reply</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>echo-reply</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Redirect</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>redirect</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Router Advertisement</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>router-advertisement</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Router Solicitation</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>router-solicitation</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Source Quench</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>source-quench</value></element></application><application><nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId><revision>0</revision><name>ICMP Time Exceeded</name><clientHandle></clientHandle><isUniversal>false</isUniversal><universalRevision>0</universalRevision><inheritanceAllowed>true</inheritanceAllowed><element><applicationProtocol>ICMP</applicationProtocol><value>time-exceeded</value></element></application></applications><invalidApplications>false</invalidApplications><logged>false</logged><action>block</action><direction>inbound</direction><outsideSecondaryContainer>false</outsideSecondaryContainer></action></actionsByCategory><statusesByCategory><category>firewall</category><status>in_sync</status></statusesByCategory></securityPolicy></securityPolicyHierarchy>
+<securityPolicyHierarchy>
+  <name></name>
+  <description></description>
+  <securityPolicy>
+    <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+    <revision>0</revision>
+    <name>Block Web Browsing</name>
+    <description>Blocks ports 80 and 443</description>
+    <clientHandle></clientHandle>
+    <isUniversal>false</isUniversal>
+    <universalRevision>0</universalRevision>
+    <inheritanceAllowed>false</inheritanceAllowed>
+    <precedence>5300</precedence>
+    <actionsByCategory>
+      <category>firewall</category>
+      <action class="firewallSecurityAction">
+        <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+        <revision>0</revision>
+        <name>Block Web Browsing</name>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <category>firewall</category>
+        <executionOrder>1</executionOrder>
+        <isEnabled>true</isEnabled>
+        <isActionEnforced>false</isActionEnforced>
+        <invalidSecondaryContainers>false</invalidSecondaryContainers>
+        <applications>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>HTTPS</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>TCP</applicationProtocol>
+              <value>443</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>HTTP</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>TCP</applicationProtocol>
+              <value>80</value>
+            </element>
+          </application>
+        </applications>
+        <invalidApplications>false</invalidApplications>
+        <logged>false</logged>
+        <action>block</action>
+        <direction>outbound</direction>
+        <outsideSecondaryContainer>false</outsideSecondaryContainer>
+      </action>
+    </actionsByCategory>
+    <statusesByCategory>
+      <category>firewall</category>
+      <status>in_sync</status>
+    </statusesByCategory>
+  </securityPolicy>
+  <securityPolicy>
+    <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+    <revision>0</revision>
+    <name>Block the Evil Ping</name>
+    <description>blocks ping</description>
+    <clientHandle></clientHandle>
+    <isUniversal>false</isUniversal>
+    <universalRevision>0</universalRevision>
+    <inheritanceAllowed>false</inheritanceAllowed>
+    <precedence>4300</precedence>
+    <actionsByCategory>
+      <category>firewall</category>
+      <action class="firewallSecurityAction">
+        <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+        <revision>0</revision>
+        <name>Blocks Incoming Ping</name>
+        <clientHandle></clientHandle>
+        <isUniversal>false</isUniversal>
+        <universalRevision>0</universalRevision>
+        <category>firewall</category>
+        <executionOrder>1</executionOrder>
+        <isEnabled>true</isEnabled>
+        <isActionEnforced>false</isActionEnforced>
+        <invalidSecondaryContainers>false</invalidSecondaryContainers>
+        <applications>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Destination Unreachable</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>destination-unreachable</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Echo</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>echo-request</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Echo Reply</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>echo-reply</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Redirect</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>redirect</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Router Advertisement</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>router-advertisement</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Router Solicitation</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>router-solicitation</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Source Quench</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>source-quench</value>
+            </element>
+          </application>
+          <application>
+            <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+            <revision>0</revision>
+            <name>ICMP Time Exceeded</name>
+            <clientHandle></clientHandle>
+            <isUniversal>false</isUniversal>
+            <universalRevision>0</universalRevision>
+            <inheritanceAllowed>true</inheritanceAllowed>
+            <element>
+              <applicationProtocol>ICMP</applicationProtocol>
+              <value>time-exceeded</value>
+            </element>
+          </application>
+        </applications>
+        <invalidApplications>false</invalidApplications>
+        <logged>false</logged>
+        <action>block</action>
+        <direction>inbound</direction>
+        <outsideSecondaryContainer>false</outsideSecondaryContainer>
+      </action>
+    </actionsByCategory>
+    <statusesByCategory>
+      <category>firewall</category>
+      <status>in_sync</status>
+    </statusesByCategory>
+  </securityPolicy>
+</securityPolicyHierarchy>
