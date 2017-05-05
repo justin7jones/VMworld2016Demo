@@ -76,6 +76,15 @@
     <universalRevision>0</universalRevision>
     <inheritanceAllowed>false</inheritanceAllowed>
     <precedence>4300</precedence>
+    <securityGroupBinding>
+      <nodeId>5cd15654-c186-4f8d-8f6c-43798ff619a4</nodeId>
+      <revision>0</revision>
+      <name>Locked Down Windows Servers</name>
+      <description></description>
+      <clientHandle></clientHandle>
+      <isUniversal>false</isUniversal>
+      <universalRevision>0</universalRevision>
+    </securityGroupBinding>
     <actionsByCategory>
       <category>firewall</category>
       <action class="firewallSecurityAction">
@@ -197,7 +206,7 @@
           </application>
         </applications>
         <invalidApplications>false</invalidApplications>
-        <logged>false</logged>
+        <logged>true</logged>
         <action>block</action>
         <direction>inbound</direction>
         <outsideSecondaryContainer>false</outsideSecondaryContainer>
@@ -208,4 +217,13 @@
       <status>in_sync</status>
     </statusesByCategory>
   </securityPolicy>
+  <securityGroup>
+    <revision>0</revision>
+    <name>Locked Down Windows Servers</name>
+    <description></description>
+    <clientHandle></clientHandle>
+    <isUniversal>false</isUniversal>
+    <universalRevision>0</universalRevision>
+    <inheritanceAllowed>false</inheritanceAllowed>
+  </securityGroup>
 </securityPolicyHierarchy>
